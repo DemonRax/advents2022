@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	input := util.ReadFile("./day01go1/input.txt")
+	input := util.ReadFile("./day01go2/input.txt")
 	input = append(input, "")
 	fmt.Println(topThree(input))
 }
