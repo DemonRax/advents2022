@@ -29,3 +29,15 @@ func (ii Interval) Before(jj Interval) bool {
 	}
 	return ii[len(ii)-1] < jj[0]
 }
+
+func Last(ss []string) int {
+	return len(ss) - 1
+}
+
+func SumIntsOrFloats[K comparable, V int64 | float64](m map[K]V) V {
+	var s V
+	for _, v := range m {
+		s += v
+	}
+	return s
+}
